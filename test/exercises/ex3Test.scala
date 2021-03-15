@@ -1,10 +1,8 @@
 package exercises
 
-import exercises.ExtendedList._
 import org.junit.jupiter.api.Assertions._
 import org.junit.jupiter.api.Test
 import u03.Lists.List.{Cons, Nil}
-import u03.Lists.List
 import u02.SumTypes._
 import exercises.PeopleList._
 
