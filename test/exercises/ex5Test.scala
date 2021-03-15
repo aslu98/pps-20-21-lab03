@@ -1,10 +1,8 @@
 package exercises
 
-import exercises.ExtendedStream._
 import org.junit.jupiter.api.Assertions._
 import org.junit.jupiter.api.Test
 import u03.Streams.Stream
-import u03.Streams.Stream._
 import u03.Lists.List.{Cons, Nil}
 
 class ex5Test {

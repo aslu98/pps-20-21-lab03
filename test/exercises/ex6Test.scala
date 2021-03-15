@@ -6,11 +6,11 @@ import u03.Lists.List.{Cons, Nil}
 import u03.Streams.Stream
 
 class ex6Test {
-  val s = Stream. take (Stream.iterate(0)(_+1))(10)
   
-  @Test def testDrop(): Unit = {
-    assertEquals(Cons(6, Cons(7, Cons(8, Cons(9, Nil())))), Stream.toList(ExtendedStream.drop(s)(6)))
-    assertEquals(Cons(9, Nil()), Stream.toList(ExtendedStream.drop(s)(9)))
+  @Test def testConstant(): Unit = {
+    val x:Int = 12
+    assertEquals(Cons(x, Cons(x, Cons(x, Cons(x, Cons(x, Nil ()))))), Stream.toList(Stream.take(ExtendedStream.constant(x))(5)))
+    assertEquals(Nil(), Stream.toList(Stream.take(ExtendedStream.constant(x))(0)))
   }
 
 }
